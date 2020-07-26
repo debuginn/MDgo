@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+
+<body class="mdui-appbar-with-toolbar">
+    <!-- header -->
+    {{ partial "header.html" . }}
+    <!-- content -->
+    <div class="mdui-container">
+        <div class="mdui-row">
+            <!-- left-sidebar -->
+            {{ partial "sidebar.left.html" . }}
+            <!-- center-content -->
+            {{ partial "center.content.html" .}}
+        </div>
+    </div>
+
+    <!-- footer -->
+    {{ partial "analytics.html" . }}
+    {{ partial "footer.html" . }}
+</body>

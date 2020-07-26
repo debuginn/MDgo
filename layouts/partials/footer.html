@@ -1,0 +1,20 @@
+<div class="mdui-container">
+    <hr class="mdui-color-grey-50">
+    <div class="mdui-center mdui-text-center mdui-m-t-1 mdui-m-b-2 mdui-typo">
+        <div>
+            {{ .Site.Params.FooterContent | safeHTML }}
+        </div>
+        <div><span id="sitetime"></span></div>
+        <div>
+            <a href="http://www.beian.miit.gov.cn/" target="_blank">{{ .Site.Copyright }}</a>
+        </div>
+        <div>
+            Theme: <a href="https://github.com/debuginn/mdgo" target="_blank"> MDgo </a> By <a
+                href="https://www.debuginn.cn" target="_blank">Debuginn</a>
+        </div>
+    </div>
+</div>
+{{ partial "footer.includes.html" . }}
+</body>
+
+</html>
